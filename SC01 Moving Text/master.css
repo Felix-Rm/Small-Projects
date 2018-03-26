@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+  background: rgb(51, 51, 51);
+  font-family: sans-serif;
+}
+
+input {
+  text-align: center;
+  border: 1px solid #333;
+  background: #999;
+  height: 30px;
+  margin: 2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: relative;
+  top: -31px;
+}
+
+p {
+  text-align: center;
+  font-size: 14;
+  padding: 5.5px;
+  margin: 0px;
+  color: #666;
+}
+
+.normal input, .normal p {
+  width: 80px;
+}
+
+.wide input, .wide p {
+  width: 120px;
+}
+
+.slim input, .slim p {
+  width: 60px;
+}
+
+table {
+  background: #333;
+  width: 800px;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+canvas {
+  position: relative;
+  top: -31px;
+}
