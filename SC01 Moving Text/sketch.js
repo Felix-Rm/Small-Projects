@@ -14,7 +14,7 @@ var displayResolution
 function start() {
 
   reload()
-  setTimeout(update, 7000)
+  setTimeout(update, displayTimer)
 }
 
 function update() {
