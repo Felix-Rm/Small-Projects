@@ -1,0 +1,98 @@
+body {
+  overflow: hidden;
+}
+
+calc {
+  font-family: sans-serif;
+  position: absolute;
+  left: 400px;
+  top: 100px;
+}
+
+tr {
+  height: 40px;
+}
+
+td {
+  width: 40px;
+  height: 40px;
+}
+
+button {
+  margin: 5px;
+  outline: 0;
+  border: none;
+  border-radius: 19px;
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  text-align: center;
+}
+
+#rechner {
+  background: #000;
+}
+
+#numField {
+  background: #000;
+}
+
+#result {
+  background: #000;
+  width: 100%
+}
+
+.scroll textarea {
+  border: none;
+  background: #000;
+  color: #fff;
+  margin: 0px;
+  padding-right: 10px;
+  font-family: inherit;
+  font-size: 20px;
+  width: 100%;
+  text-align: right;
+  resize: none;
+}
+
+.erg button {
+  color: #fff;
+  background: #ed982a;
+}
+
+.spc button {
+  color: #000;
+  background: #eee;
+}
+
+.num button {
+  color: #fff;
+  background: #444;
+}
+
+.exp button {
+  color: #fff;
+  background: #222;
+  width: 2px;
+  transition: width 1s;
+}
+
+.act button {
+  color: #000;
+  background: #8ac65b;
+}
+
+#exp {
+  z-index: -1;
+  opacity: 0;
+  background: #000;
+  padding: 2px;
+  padding-top: 4px;
+  -webkit-transform: translate(0%, -100%);
+  transition: -webkit-transform 1s, opacity 0.3s, background 1s;
+  transition-timing-function: ease-in-out;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}

@@ -1,0 +1,183 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background:#333">
+
+  <calc>
+    <table id="rechner">
+      <tr class="scroll">
+        <td>
+
+          <textarea placeholder="0" name="out" rows="1"></textarea>
+
+        </td>
+      </tr>
+      <tr>
+
+        <td>
+          <table id="numField">
+            <tr>
+              <td class="spc">
+                <button onclick="C()">C</button>
+              </td>
+              <td class="spc">
+                <button onclick="M(this)">...</button>
+              </td>
+              <td class="spc">
+                <button onclick="addToString(this)">^</button>
+              </td>
+              <td class="erg">
+                <button onclick="addToString(this)">/</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="num">
+                <button onclick="addToString(this)">1</button>
+              </td>
+              <td class="num">
+                <button onclick="addToString(this)">2</button>
+              </td>
+              <td class="num">
+                <button onclick="addToString(this)">3</button>
+              </td>
+              <td class="erg">
+                <button onclick="addToString(this)">x</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="num">
+                <button onclick="addToString(this)">4</button>
+              </td>
+              <td class="num">
+                <button onclick="addToString(this)">5</button>
+              </td>
+              <td class="num">
+                <button onclick="addToString(this)">6</button>
+              </td>
+              <td class="erg">
+                <button onclick="addToString(this)">-</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="num">
+                <button onclick="addToString(this)">7</button>
+              </td>
+              <td class="num">
+                <button onclick="addToString(this)">8</button>
+              </td>
+              <td class="num">
+                <button onclick="addToString(this)">9</button>
+              </td>
+              <td class="erg">
+                <button onclick="addToString(this)">+</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="num" colspan="2">
+                <button style="width:94px;" onclick="addToString(this)">0</button>
+              </td>
+              <td class="num">
+                <button onclick="addToString(this)">.</button>
+              </td>
+              <td class="erg">
+                <button onclick="ergebnis()">=</button>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <table id="exp">
+      <!-- <tr>
+        <td></td>
+      </tr> -->
+      <tr>
+        <td class="exp">
+          <button onclick="addToString(this)">(</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToString(this)">)</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">x²</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">x³</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">%</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">10^x</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">1/x</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">&#8730;</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">&#8731;</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">Ln</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">log<sub>10</sub></button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">x!</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">sin</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">cos</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">tan</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">Rnd</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">EE</button>
+        </td>
+        <td class="exp">
+          <button onclick="A(this)">Rad</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">&#960;</button>
+        </td>
+        <td class="exp">
+          <button onclick="addToStringEXP(this)">e</button>
+        </td>
+      </tr>
+    </table>
+
+  </calc>
+
+
+
+  <script type="text/javascript" src="script.js">
+  </script>
+  <script type="text/javascript" src="calc.js">
+  </script>
+</body>
+
+</html>

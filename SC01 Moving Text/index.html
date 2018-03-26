@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="vehicle.js"></script>
+
+  <style>
+    body {
+      margin: 0px;
+      overflow: hidden;
+    }
+
+    input {
+      text-align: center;
+      border: 1px solid #333;
+      background: #999;
+      height: 30px;
+      margin: 2px;
+    }
+
+    .normal input {
+      width: 80px;
+    }
+
+    .wide input {
+      width: 120px;
+    }
+
+    .slim input {
+      width: 60px;
+    }
+
+    table {
+      background: #333;
+      width: 800px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr align="center">
+      <td class="wide"><input type="text" name="text" value="<html> hi </html>"></td>
+
+      <td class="slim"><input type="number" name="size" value="200"></td>
+      <td class="slim"><input type="number" name="radius" value="9"></td>
+
+      <td class="slim"><input type="number" name="resolution" step="0.01" value="0.13"></td>
+      <td class="slim"><input type="number" name="change" step="0.1" value="7"></td>
+
+      <td class="slim"><input type="number" name="mouse" step="1" value="4"></td>
+      <td class="slim"><input type="number" name="arrive" step="0.1" value="12"></td>
+
+      <td class="normal"><input type="color" name="vcolor" value="#EA5757"></td>
+      <td class="normal"><input type="color" name="bgcolor" value="#333333"></td>
+    </tr>
+  </table>
+
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+</body>
+
+</html>
