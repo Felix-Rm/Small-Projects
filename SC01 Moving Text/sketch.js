@@ -18,7 +18,6 @@ function start() {
 }
 
 function update() {
-  elem >= displayText.length - 1 ? elem = 0 : elem++;
   reload()
   setTimeout(update, displayTimer)
 }
@@ -58,7 +57,7 @@ function loadValues() {
 
 function reload() {
   loadValues()
-
+  elem >= displayText.length - 1 ? elem = 0 : elem++;
   bound = font.textBounds(displayText[elem], width / 2, height / 2, displaySize)
   points = font.textToPoints(displayText[elem], bound.x - displayRadius * 2, height / 2 + bound.h / 2, displaySize, {
     sampleFactor: displayResolution
