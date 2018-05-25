@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: auto;
   overflow: hidden;
   background: rgb(51, 51, 51);
   font-family: sans-serif;
@@ -40,7 +40,6 @@ p {
 table {
   background: #333;
   width: 800px;
-  margin:auto;
 }
 
 input:hover {
