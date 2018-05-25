@@ -1,6 +1,7 @@
 body {
   margin: auto;
-  /*overflow: hidden;*/
+  overflow: hidden;
+  width:800px;
   background: rgb(51, 51, 51);
   font-family: sans-serif;
 }
